@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container img{
+    width: 350px;
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px gray;
+    transform: perspective(800px) rotateY(20deg);
+    transition: 0.5s;
+    
+}
+img:hover{
+    transform: perspective(800px) rotateY(0deg);
+}
+.container{
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, #0004);
+}
+.container:hover img{
+    opacity: 0.3;
+}
+.container img:hover{
+    opacity: 1;
+}
+
+
